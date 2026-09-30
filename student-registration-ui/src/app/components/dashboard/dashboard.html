@@ -1,0 +1,35 @@
+<div class="container" >
+  <h2 class="mb-4" style="text-align: center; margin-top: 20px;">Student Registration Page</h2>
+  <button class="btn btn-primary" (click)="navigateToAddStudent()" style="border-radius: 20px;align-content:end;">Add Student</button>
+</div>
+<div class="container mt-5">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Student Name</th>
+        <th scope="col">Student Code</th>
+        <th scope="col">Department</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Email</th>
+        <th scope="col">DOB</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (student of students(); track student) {
+      <tr>
+        <td>{{ student.name }}</td>
+        <td>{{ student.studentID }}</td>
+        <td>{{ student.department }}</td>
+        <td>{{ student.gender }}</td>
+        <td>{{ student.emailID }}</td>
+        <td>{{ student.dateOfBirth | date }}</td>
+        <td class="d-flex gap-2">
+          <button class="btn btn-secondary" (click)="navigateToEditStudent(student)">Edit</button>
+          <button class="btn btn-danger" (click)="deleteStudent(student)">Delete</button>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

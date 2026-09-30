@@ -1,0 +1,93 @@
+# =========================
+# ASP.NET Web API (.NET)
+# =========================
+
+# Build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+publish/
+out/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+
+# Test results and coverage
+TestResults/
+[Tt]est[Rr]esult*/
+coverage/
+*.coverage
+*.coveragexml
+
+# Logs
+*.log
+logs/
+
+# Local settings and secrets (keep appsettings.json, ignore local overrides)
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+secrets.json
+launchSettings.json
+
+# Local database files
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# =========================
+# Angular
+# (the Angular CLI also creates its own .gitignore inside the Angular folder;
+#  these entries cover the same things at the repo root as a safety net)
+# =========================
+
+node_modules/
+dist/
+tmp/
+out-tsc/
+.angular/
+.sass-cache/
+/coverage
+/typings
+*.tsbuildinfo
+
+# npm / yarn debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Editors and OS
+# =========================
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment files
+.env
+.env.local
